@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Samson Desmond Osagyefo — Computer Engineer</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/fonts/remixicon.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="nav" id="nav" aria-label="Primary navigation">
+    <a href="#top" class="nav_mark">
+        <img class="nav_logo" src="photo_2026-09-08_03-40-29.jpg" alt="The Fallen logo">
+    </a>
+    <button type="button" class="nav_toggle" id="navToggle" aria-label="Toggle menu" aria-controls="navLinks" aria-expanded="false">
+        <i class="ri-menu-line"></i>
+    </button>
+    <ul class="nav_links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<main>
+    <section class="hero" id="top">
+        <div class="hero_grid">
+            <div class="hero_text">
+                <p class="hero_location"><span class="pin"></span>Accra, Ghana</p>
+                <h1>Samson Desmond<br>Osagyefo</h1>
+                <p class="hero_role">Computer Engineering student who directs AI agents to architect and ship real software.</p>
+                <p class="hero_body">I treat Claude, Cursor, and ChatGPT as a development engine — combining a solid grip on Python, web architecture, and cloud databases with the speed of AI-assisted engineering to take products from idea to working system.</p>
+                <div class="hero_actions">
+                    <a href="#projects" class="btn btn_primary">View projects</a>
+                    <a href="#contact" class="btn btn_ghost">Get in touch</a>
+                </div>
+            </div>
+
+            <div class="hero_figure">
+                <div class="portrait_frame">
+                    <img src="poster image.png" alt="Portrait of Samson Desmond Osagyefo">
+                    <span class="bracket bracket_tl"></span>
+                    <span class="bracket bracket_br"></span>
+                </div>
+                <p class="fig_caption">FIG. 01 — ENGINEER</p>
+            </div>
+        </div>
+
+        <div class="pipeline" aria-label="Development workflow">
+            <div class="pipeline_node">
+                <span class="pipeline_label">Human intent</span>
+                <p>Problem, spec, product goal</p>
+            </div>
+            <span class="pipeline_line"></span>
+            <div class="pipeline_node">
+                <span class="pipeline_label">AI agent</span>
+                <p>Claude &middot; Cursor &middot; ChatGPT</p>
+            </div>
+            <span class="pipeline_line"></span>
+            <div class="pipeline_node">
+                <span class="pipeline_label">Shipped system</span>
+                <p>Working, deployed software</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="section_inner">
+            <h2>About</h2>
+            <p>I'm a Computer Engineering student at Ghana Communication Technology University with a hands-on foundation in Python, web architecture, and cloud databases. My edge is directing AI coding agents through the full build cycle — prototyping, refactoring, and debugging — so I can move from concept to working software fast without cutting corners on structure. I'm looking to bring that AI-native workflow to Web3 and AI infrastructure work.</p>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <div class="section_inner">
+            <h2>What I build with</h2>
+            <div class="skills_grid">
+                <div class="skill_panel">
+                    <span class="bracket bracket_tl small"></span>
+                    <h3>AI-native engineering</h3>
+                    <ul class="tag_list">
+                        <li>Directing AI code generation</li>
+                        <li>Prompt engineering</li>
+                        <li>Iterative refactoring</li>
+                        <li>AI-assisted debugging</li>
+                    </ul>
+                </div>
+                <div class="skill_panel">
+                    <span class="bracket bracket_tl small"></span>
+                    <h3>Web &amp; programming</h3>
+                    <ul class="tag_list">
+                        <li>JavaScript (ES6+)</li>
+                        <li>Python</li>
+                        <li>C++</li>
+                        <li>HTML5 &amp; CSS3</li>
+                    </ul>
+                </div>
+                <div class="skill_panel">
+                    <span class="bracket bracket_tl small"></span>
+                    <h3>Backend &amp; cloud</h3>
+                    <ul class="tag_list">
+                        <li>MongoDB Atlas</li>
+                        <li>Supabase</li>
+                        <li>Node.js</li>
+                        <li>RESTful APIs &amp; Paystack</li>
+                    </ul>
+                </div>
+                <div class="skill_panel">
+                    <span class="bracket bracket_tl small"></span>
+                    <h3>Tools &amp; workflow</h3>
+                    <ul class="tag_list">
+                        <li>Git &amp; GitHub</li>
+                        <li>Cursor IDE &amp; Claude Code</li>
+                        <li>Technical troubleshooting</li>
+                        <li>System documentation</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <div class="section_inner">
+            <h2>Selected projects</h2>
+            <div class="projects_grid">
+                <article class="project_card">
+                    <span class="bracket bracket_tl"></span>
+                    <span class="bracket bracket_br"></span>
+                    <h3>Project Athena</h3>
+                    <p class="project_role">Lead Architect &middot; Local-first AI orchestration</p>
+                    <p>A central hub that orchestrates phones, computers, and IoT endpoints from one system. Built a hybrid AI router that switches between a cloud LLM (Claude) when online and a local LLM (Ollama) when offline, behind a 4-tier sandboxed security matrix.</p>
+                    <ul class="tech_tags">
+                        <li>Python</li>
+                        <li>REST</li>
+                        <li>Claude</li>
+                        <li>Ollama</li>
+                    </ul>
+                    <a class="project_link" href="https://github.com/Azrae-theFallen" target="_blank" rel="noopener" aria-label="View Project Athena on GitHub">
+                        <span>View GitHub profile</span>
+                        <i class="ri-arrow-up-right-line" aria-hidden="true"></i>
+                    </a>
+                </article>
+
+                <article class="project_card">
+                    <span class="bracket bracket_tl"></span>
+                    <span class="bracket bracket_br"></span>
+                    <h3>Nexus Mart</h3>
+                    <p class="project_role">Developer &amp; System Architect &middot; E-commerce</p>
+                    <p>Refactored a monolithic storefront into a clean, multi-file modular architecture in Cursor IDE. Connected the frontend to MongoDB Atlas and Supabase, and shipped secure checkout via the Paystack API.</p>
+                    <ul class="tech_tags">
+                        <li>MongoDB Atlas</li>
+                        <li>Supabase</li>
+                        <li>Paystack API</li>
+                    </ul>
+                    <a class="project_link" href="https://github.com/Azrae-theFallen" target="_blank" rel="noopener" aria-label="View Nexus Mart on GitHub">
+                        <span>View GitHub profile</span>
+                        <i class="ri-arrow-up-right-line" aria-hidden="true"></i>
+                    </a>
+                </article>
+
+                <article class="project_card">
+                    <span class="bracket bracket_tl"></span>
+                    <span class="bracket bracket_br"></span>
+                    <h3>Data automation tooling</h3>
+                    <p class="project_role">CodeAlpha Internship &middot; Python</p>
+                    <p>Custom Python scripts for data handling, task automation, and state management, maintained in version-controlled GitHub repositories with AI-assisted test generation and algorithm tuning.</p>
+                    <ul class="tech_tags">
+                        <li>Python</li>
+                        <li>Git</li>
+                        <li>Automation</li>
+                    </ul>
+                    <a class="project_link" href="https://github.com/Azrae-theFallen" target="_blank" rel="noopener" aria-label="View data automation tooling on GitHub">
+                        <span>View GitHub profile</span>
+                        <i class="ri-arrow-up-right-line" aria-hidden="true"></i>
+                    </a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="experience" id="experience">
+        <div class="section_inner">
+            <h2>Experience</h2>
+            <ol class="timeline">
+                <li class="timeline_item">
+                    <span class="timeline_dot"></span>
+                    <div class="timeline_content">
+                        <h3>Athena AI — Personal Assistant System</h3>
+                        <p class="timeline_meta">Independent project &middot; Python &middot; Claude / Ollama</p>
+                        <p>Built a tool-calling assistant with terminal and HTTP interfaces that controls Home Assistant devices and creates files, PDFs, and office documents inside a sandboxed workspace. Added tiered permission gates, approval queues, online/offline routing between Claude and local Ollama, and a persistent SQLite audit trail for accountable automation.</p>
+                    </div>
+                </li>
+                <li class="timeline_item">
+                    <span class="timeline_dot"></span>
+                    <div class="timeline_content">
+                        <h3>App Development &amp; Python Programming Intern</h3>
+                        <p class="timeline_meta">CodeAlpha &middot; Remote &middot; In progress</p>
+                        <p>Building functional Python modules against technical specs, maintaining GitHub repositories, and adopting AI-native tooling to clear technical blockers faster.</p>
+                    </div>
+                </li>
+                <li class="timeline_item">
+                    <span class="timeline_dot"></span>
+                    <div class="timeline_content">
+                        <h3>Platform Manager</h3>
+                        <p class="timeline_meta">Nexus Mart &middot; Accra, Ghana</p>
+                        <p>Owned digital merchandising operations, database management, and system troubleshooting to keep the platform running without interruption.</p>
+                    </div>
+                </li>
+                <li class="timeline_item">
+                    <span class="timeline_dot"></span>
+                    <div class="timeline_content">
+                        <h3>Sales Assistant</h3>
+                        <p class="timeline_meta">Melcom Limited &middot; Tema, Ghana</p>
+                        <p>Supported customers, inventory tracking, and shelf replenishment within a high-volume retail team.</p>
+                    </div>
+                </li>
+            </ol>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="section_inner">
+            <h2>Let's talk</h2>
+            <div class="contact_identity">
+                <h3>Samson Desmond Osagyefo</h3>
+                <p>Computer Engineering student &amp; AI-native developer</p>
+            </div>
+            <p>Open to AI-assisted software engineering roles, especially where Web3 and AI infrastructure meet. The fastest way to reach me is email.</p>
+            <div class="contact_grid">
+                <a class="contact_link" href="mailto:osagyefosamson9018@gmail.com">
+                    <i class="ri-mail-line" aria-hidden="true"></i>
+                    <span>osagyefosamson9018@gmail.com</span>
+                </a>
+                <a class="contact_link" href="tel:+233256320179">
+                    <i class="ri-phone-line" aria-hidden="true"></i>
+                    <span>+233 25 632 0179</span>
+                </a>
+                <a class="contact_link" href="https://linkedin.com/in/samson-osagyefo" target="_blank" rel="noopener">
+                    <i class="ri-linkedin-box-line" aria-hidden="true"></i>
+                    <span>linkedin.com/in/samson-osagyefo</span>
+                </a>
+                <a class="contact_link" href="https://github.com/Azrae-theFallen" target="_blank" rel="noopener" aria-label="Visit Azrae-theFallen on GitHub">
+                    <i class="ri-github-line" aria-hidden="true"></i>
+                    <span>github.com/Azrae-theFallen</span>
+                </a>
+            </div>
+            <a href="mailto:osagyefosamson9018@gmail.com" class="btn btn_primary contact_cta">Email me</a>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <p>Built by Samson Desmond Osagyefo &middot; GCTU, Accra</p>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
