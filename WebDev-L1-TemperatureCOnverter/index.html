@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Temperature Converter</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600&family=Sora:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<main class="page">
+    <div class="card">
+        <p class="eyebrow">Instant, exact conversions</p>
+        <h1>Temperature Converter</h1>
+        <p class="intro">Enter a value, pick its unit, and see it converted to Celsius, Fahrenheit, and Kelvin at once.</p>
+
+        <form id="convertForm" class="form" novalidate>
+            <div class="field">
+                <label for="tempValue">Temperature</label>
+                <input type="text" inputmode="decimal" id="tempValue" name="tempValue" placeholder="e.g. 37" autocomplete="off" aria-describedby="message" aria-invalid="false">
+            </div>
+
+            <div class="field">
+                <span class="field_label">Unit</span>
+                <div class="unit_select" role="radiogroup" aria-label="Input unit">
+                    <button type="button" class="unit_btn active" data-unit="C" role="radio" aria-checked="true">&deg;C</button>
+                    <button type="button" class="unit_btn" data-unit="F" role="radio" aria-checked="false">&deg;F</button>
+                    <button type="button" class="unit_btn" data-unit="K" role="radio" aria-checked="false">K</button>
+                </div>
+            </div>
+
+            <button type="submit" class="btn_convert">Convert</button>
+        </form>
+
+        <div class="gauge" id="gauge" hidden>
+            <div class="gauge_track">
+                <div class="gauge_fill" id="gaugeFill"></div>
+            </div>
+            <div class="gauge_labels">
+                <span>Cold</span>
+                <span>Hot</span>
+            </div>
+        </div>
+
+        <div class="results" id="results" hidden>
+            <div class="result_card" id="resultC">
+                <span class="result_label">Celsius</span>
+                <span class="result_value"><span id="valC">--</span>&deg;C</span>
+            </div>
+            <div class="result_card" id="resultF">
+                <span class="result_label">Fahrenheit</span>
+                <span class="result_value"><span id="valF">--</span>&deg;F</span>
+            </div>
+            <div class="result_card" id="resultK">
+                <span class="result_label">Kelvin</span>
+                <span class="result_value"><span id="valK">--</span>K</span>
+            </div>
+        </div>
+
+        <p class="message" id="message" role="alert" aria-live="polite"></p>
+    </div>
+</main>
+
+<script src="main.js"></script>
+</body>
+</html>
