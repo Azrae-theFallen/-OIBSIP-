@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+        <link rel="stylesheet" href="styles.css">
+        <title>Attack on Titan Fan Page</title>
+    </head>
+    <body>
+        <nav aria-label="Primary navigation">
+            <div class="nav_header">
+                <div class="nav_logo">
+                    <a href="#home" aria-label="The Fallen home">
+                        <img src="assets/logo-black.png" alt="The Fallen" class="nav_logo_img theme_logo_dark" />
+                        <img src="assets/logo-white.png" alt="" aria-hidden="true" class="nav_logo_img theme_logo_light" />
+                    </a>
+                </div>
+                <div class="nav_controls">
+                    <button
+                        class="theme_btn"
+                        id="theme-toggle"
+                        type="button"
+                        aria-label="Switch to light theme"
+                        aria-pressed="false"
+                    >
+                        <i class="ri-sun-line" aria-hidden="true"></i>
+                    </button>
+                    <button
+                        class="nav_menu_btn"
+                        id="menu-btn"
+                        type="button"
+                        aria-label="Open navigation menu"
+                        aria-expanded="false"
+                        aria-controls="nav-links"
+                    >
+                        <i class="ri-menu-line" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+
+            <ul class="nav_links" id="nav-links" aria-hidden="true">
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#contact">CONTACT US</a></li>
+                <li><a href="#characters">CHARACTERS</a></li>
+                <li><a href="#journey">JOURNEY</a></li>
+            </ul>
+        </nav>
+
+
+
+        <header id="home">
+            <div class="header_image">
+                <img
+                    src="assets/side.jpg"
+                    alt="A Scout Regiment soldier stands before a burning city after the fall of Wall Maria."
+                    class="hero_image"
+                />
+            </div>
+            <div class="header_content">
+                <p class="eyebrow">SHINGEKI NO KYOJIN &middot; ATTACK ON TITAN</p>
+                <h1>The Greatest Show To Ever Exist</h1>
+                <p>
+                    Created by Hajime Isayama, Attack on Titan (Shingeki no Kyojin) is a global anime phenomenon that redefined dark fantasy storytelling. What begins as a desperate struggle for human survival behind towering walls evolves into a multilayered exploration of freedom, morality, and geopolitical intrigue. Blending relentless action with flawless plot twists and unmatched narrative depth, it challenges the very nature of conflict&mdash;earning its place as a defining masterpiece of modern television.
+                </p>
+                <div class="header_btn">
+                    <a href="#seasons">Explore the seasons <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </header>
+        <main>
+        <section class="arcs" id="journey">
+            <h2 class="section_title">The Journey</h2>
+            <div class="arcs_grid">
+                <div class="arc_card">
+                    <h3>The Fall of Shiganshina</h3>
+                    <p>The Colossal Titan breaches the wall, and humanity's fragile peace shatters — beginning a desperate fight for survival.</p>
+                </div>
+                <div class="arc_card">
+                    <h3>The Return to Shiganshina</h3>
+                    <p>Eren and the Survey Corps reclaim their home, only to uncover truths that reshape everything they believed.</p>
+                </div>
+                <div class="arc_card">
+                <h3>The Marley Arc</h3>
+                <p>The story shifts beyond the walls, revealing a wider world of politics, prejudice, and a war with no clear villain.</p>
+            </div>
+            <div class="arc_card">
+                <h3>The Rumbling</h3>
+                <p>Freedom or Annihilation - the final saga forces every character toward an irreversible reckoning.</p>
+            </div>
+            </div>
+        </section>
+        <section class="seasons" id="seasons">
+            <h2 class="section_title">The Seasons</h2>
+            <p class="section_subtitle">Tap a season to reveal what's waiting inside.</p>
+            <div class="seasons_grid">
+                <div class="season_card s1" id="season-1">
+                    <button class="season_toggle" aria-expanded="false" aria-controls="season-1-content">
+                        <div class="season_poster">
+                            <img src="assets/s1.jpg" alt="Attack on Titan Season 1 key art showing the series characters and towering Titans in a dramatic, warlike setting; the composition conveys danger and the beginning of a desperate struggle." class="season_img">
+                            <span class="season_num">S1</span>
+                        </div>
+                        <div class="season_head">
+                            <div>
+                                <span class="season_tag">2013 &middot; 25 Episodes</span>
+                                <h3>Attack on Titan</h3>
+                            </div>
+                            <i class="ri-arrow-down-s-line season_icon" aria-hidden="true"></i>
+                        </div>
+                    </button>
+                    <div class="season_content" aria-hidden="true" id="season-1-content">
+                        <p>Humanity has lived in peace behind three concentric walls for over a century — until a Titan taller than the wall itself shatters that illusion in a single afternoon. Eren, Mikasa, and Armin watch their home fall, and swear an oath that will consume the rest of their lives. This is where the nightmare begins.</p>
+                    </div>
+                </div>
+
+                <div class="season_card s2" id="season-2">
+                    <button class="season_toggle" aria-expanded="false" aria-controls="season-2-content">
+                        <div class="season_poster">
+                            <img src="assets/s2.png" alt="Attack on Titan Season 2 key art showing human soldiers and Titans in a tense, threatening setting; the dark scene conveys suspicion and imminent danger." class="season_img">
+                            <span class="season_num">S2</span>
+                        </div>
+                        <div class="season_head">
+                            <div>
+                                <span class="season_tag">2017 &middot; 12 Episodes</span>
+                                <h3>Clash of Titans</h3>
+                            </div>
+                            <i class="ri-arrow-down-s-line season_icon" aria-hidden="true"></i>
+                        </div>
+                    </button>
+                    <div class="season_content" aria-hidden="true" id="season-2-content">
+                        <p>The wall itself has secrets, and one of them is standing inside the Survey Corps' own ranks. As a Titan breach inside Wall Rose turns into a hunt for a traitor, the line between friend and monster blurs — and the truth about who the real enemy is starts to feel far more complicated than anyone imagined.</p>
+                    </div>
+                </div>
+
+                <div class="season_card s3" id="season-3">
+                    <button class="season_toggle" aria-expanded="false" aria-controls="season-3-content">
+                        <div class="season_poster">
+                            <img src="assets/s3.jpg" alt="Attack on Titan Season 3 key art showing members of the Survey Corps in a dramatic setting of conflict and discovery; the serious composition conveys political tension and peril." class="season_img">
+                            <span class="season_num">S3</span>
+                        </div>
+                        <div class="season_head">
+                            <div>
+                                <span class="season_tag">2018-19 &middot; 22 Episodes</span>
+                                <h3>Royal Government &amp; Homecoming</h3>
+                            </div>
+                            <i class="ri-arrow-down-s-line season_icon" aria-hidden="true"></i>
+                        </div>
+                    </button>
+                    <div class="season_content" aria-hidden="true" id="season-3-content">
+                        <p>The greatest threat isn't always outside the walls. A political coup drags the Survey Corps into a battle for the capital itself, unearthing a conspiracy the government has buried for a hundred years. Then comes the return to Shiganshina — and a secret in Eren's basement that rewrites everything.</p>
+                    </div>
+                </div>
+
+                <div class="season_card s4" id="season-4">
+                    <button class="season_toggle" aria-expanded="false" aria-controls="season-4-content">
+                        <div class="season_poster">
+                            <img src="assets/s4.jpg" alt="Attack on Titan Season 4 key art showing characters amid a large-scale battlefield and wartime destruction; the bleak composition conveys conflict, loss, and an approaching final reckoning." class="season_img">
+                            <span class="season_num">S4</span>
+                        </div>
+                        <div class="season_head">
+                            <div>
+                                <span class="season_tag">2020-23 &middot; The Final Season</span>
+                                <h3>The Final Season</h3>
+                            </div>
+                            <i class="ri-arrow-down-s-line season_icon" aria-hidden="true"></i>
+                        </div>
+                    </button>
+                    <div class="season_content" aria-hidden="true" id="season-4-content">
+                        <p>The world beyond the sea is nothing like Paradis imagined — and neither is Eren. As old allies become enemies across the battlefields of Marley, one choice sets an unstoppable force in motion. There is no going back, and no one walks away from this ending unchanged.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="characters" id="characters">
+    <h2 class="section_title">Iconic Characters</h2>
+    <div class="characters_grid">
+        <div class="character_card">
+            <div class="character_avatar">
+                <img src="assets/eren.jpg" alt="Portrait of Eren Yeager, a central Attack on Titan character, presented in a serious and determined mood against a dark background." />
+            </div>
+            <h3>Eren Yeager</h3>
+            <p class="character_role">Founding Titan</p>
+            <p>"If people knew it would come to this, nobody would go to war. But most people are pushed by something, forced to march into hell. That 'something' wasn't their choice. Their situation or others made them do it. But people who push their own backs see a different kind of hell. They can see something beyond hell. It might be hope. It may even be another hell. Only those who keep moving forward will ever know. I will keep moving forward... until I have killed all my enemies."</p>
+        </div>
+        <div class="character_card">
+            <div class="character_avatar" >
+                <img src="assets/mikasa.jpg" alt="Portrait of Mikasa Ackerman, a Survey Corps soldier, presented with a focused and resolute expression against a dark background." />
+            </div>
+            <h3>Mikasa Ackerman</h3>
+            <p class="character_role">Survey Corps</p>
+            <p>"The world is cruel, but also very beautiful. There are only so many lives that I actually care about. My enemies made deciding that easy years ago. So... you're mistaken to seek any compassion from me. Because right now, I'm all out of time and room in my heart to care."</p>
+        </div>
+        <div class="character_card">
+            <div class="character_avatar">
+                <img src="assets/armin.jpg" alt="Portrait of Armin Arlert, the Colossal Titan, presented in a thoughtful and serious mood against a dark background." />
+            </div>
+            <h3>Armin Arlert</h3>
+            <p class="character_role">Colossal Titan</p>
+            <p>"I don't want to die... I want to see it. What's out there in the world. We'll suffer for the sin of killing 80% of humanity. Together."</p>
+        </div>
+        <div class="character_card">
+            <div class="character_avatar">
+                <img src="assets/levi.jpg" alt="Portrait of Levi Ackerman, Captain of the Survey Corps, presented with a stern and controlled expression against a dark background." />
+            </div>
+            <h3>Levi Ackerman</h3>
+            <p class="character_role">Captain, Survey Corps</p>
+            <p>"The only ones who should kill are those prepared to be killed. I don't know the answer to that. I never have. Whether I trusted myself or the choices of my dependable comrades, there was no telling how things would turn out. So, just do the best you can and choose whichever you'll regret the least."</p>
+        </div>
+        <div class="character_card">
+            <div class="character_avatar">
+                <img src="assets/erwin.jpg" alt="Portrait of Erwin Smith, Commander of the Survey Corps, presented with a resolute expression against a dark background." />
+            </div>
+            <h3>Erwin Smith</h3>
+            <p class="character_role">Commander, Survey Corps</p>
+            <p>"Soldiers, devote your hearts. Everything I've done until now... was because I thought this day would come. That someday, I could check if I was right. So many times... I thought death would be much easier. But always, the dream I shared with my father flashed through my mind. And now, I'm close to the answers, close enough to reach out and grab them."</p>
+        </div>
+        <div class="character_card">
+            <div class="character_avatar">
+                <img src="assets/hange.jpg" alt="Portrait of Hange Zoë, the 14th Commander, presented with an energetic and focused expression against a dark background." />
+            </div>
+            <h3>Hange Zoë</h3>
+            <p class="character_role">14th Commander</p>
+            <p>"Titans are fascinating, magnificent creatures. Do you know why we the Scouts have shed so much blood?! To take back our freedom from the Titans! I was willing to sacrifice my own life for that cause."</p>
+        </div>
+        <div class="character_card">
+            <div class="character_avatar">
+                <img src="assets/reiner.jpg" alt="Portrait of Reiner Braun, the Armored Titan, presented in a troubled and intense mood against a dark background." />
+            </div>
+            <h3>Reiner Braun</h3>
+            <p class="character_role">Armored Titan</p>
+            <p>"I'm the one who did it. I'm the Armored Titan. I wanted to be a hero! I wanted people's respect! It's my fault! Your mom was eaten by a Titan because of me! I'm sick of this... of myself! Just kill me, Eren." </p>
+        </div>
+        <div class="character_card">
+            <div class="character_avatar">
+                <img src="assets/annie.jpg" alt="Portrait of Annie Leonhart, the Female Titan, presented with a guarded and serious expression against a dark background." />
+            </div>
+            <h3>Annie Leonhart</h3>
+            <p class="character_role">Female Titan</p>
+            <p>"I just... wanted to go home. I'm done thinking that nothing matters to me. I'm fully aware that I've committed irredeemable sins. But if it's for returning to my father... I WON'T HESITATE TO REPEAT WHAT I DID."</p>
+        </div>
+        <div class="character_card">
+            <div class="character_avatar">
+                <img src="assets/jean.jpg" alt="Portrait of Jean Kirschtein, a Survey Corps soldier, presented with a wary and determined expression against a dark background." />
+            </div>
+            <h3>Jean Kirschtein</h3>
+            <p class="character_role">Survey Corps</p>
+            <p>"Whether we die trying, or die running — we die either way. If I hadn't become a soldier, I never would've had to worry about who's next... I know I have to fight. But not everyone can be a suicidal maniac like you, Eren."</p>
+        </div>
+        <div class="character_card">
+            <div class="character_avatar">
+                <img src="assets/flock.jpg" alt="Portrait of Floch Forster, a Yeagerist, presented in a stern and defiant mood against a dark background." />
+            </div>
+            <h3>Floch Forster</h3>
+            <p class="character_role">Yeagerist</p>
+            <p>"Someone has to be the bad guy. Look there. Eren's telling us something: we have to fight. We can't just cower behind our walls, waiting for death to come. We need to fight like he does, like devils."</p>
+        </div>
+        <div class="character_card">
+            <div class="character_avatar">
+                <img src="assets/zeke.jpg" alt="Portrait of Zeke Yeager, the Beast Titan, presented with a calculating and serious expression against a dark background." />
+            </div>
+            <h3>Zeke Yeager</h3>
+            <p class="character_role">Beast Titan</p>
+            <p>"Let's build a world without Titans... together. What's more, if we hadn't been born, We wouldn't have had to suffer!"</p>
+        </div>
+        <div class="character_card">
+            <div class="character_avatar">
+                <img src="assets/ymir.jpg" alt="Portrait of Ymir Fritz, the First Founding Titan, presented in a solemn and mysterious mood against a dark background." />
+            </div>
+            <h3> Ymir Fritz</h3>
+            <p class="character_role">First Founding Titan</p>
+            <p>Over 2,000 years ago, she gained the power of the Titans and was forced into slavery by the ancient Eldian King Fritz. After her death, her soul was trapped in the "Paths," where she continued to build Titans from clay for her descendants.</p>
+        </div>
+    </div>
+</section>
+        </main>
+
+        <footer id="contact">
+            <div class="footer_content">
+                <div class="footer_brand">
+                    <h3>ATTACK ON TITAN</h3>
+                    <p>A fan-made tribute page exploring the world, seasons, and characters of Shingeki no Kyojin.</p>
+                </div>
+                <div class="footer_links">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#journey">The Journey</a></li>
+                        <li><a href="#seasons">The Seasons</a></li>
+                        <li><a href="#characters">Characters</a></li>
+                    </ul>
+                </div>
+                <div class="footer_social">
+                    <h4>Connect</h4>
+                    <div class="footer_social_icons">
+                        <a href="#" aria-label="Twitter/X"><i class="ri-twitter-x-line"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="ri-youtube-line"></i></a>
+                        <a href="#" aria-label="Email"><i class="ri-mail-line"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_bottom">
+                <p>&copy; 2026 Attack on Titan Fan Page.</p>
+            </div>
+        </footer>
+        <script src="main.js"></script>
+    </body>
+</html>
